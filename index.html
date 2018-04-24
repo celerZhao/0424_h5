@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta name="ML-Config" content="fullscreen=yes,preventMove=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>光汇加油卡-新手体验</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <script type="text/javascript">
+    var cssEl = document.createElement('style');
+    document.documentElement.firstElementChild.appendChild(cssEl);
+    function setPxPerRem() {
+        var dpr = 1;
+        var pxPerRem = document.documentElement.clientWidth * dpr / 32;
+        if (pxPerRem < 10) pxPerRem = 10;
+        if (pxPerRem > 20) pxPerRem = 20;
+        cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
+    }
+    setPxPerRem();
+    </script>
+</head>
+
+<body>
+    <div class="gh-container">
+        <div><img src="img/topindex.png" /></div>
+        <div class="gh-banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mb-15 tc fs-16 bold c-red">三重保障</div>
+                        <img src="img/banner01.png" />
+                        <div class="mt-10 tc fs-11 c-darkgray">人保、易安和工商银行保证您的资金安全</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mb-15 tc fs-16 bold c-red">平台优势</div>
+                        <img src="img/banner02.png" />
+                        <div class="mt-10 tc fs-11 c-darkgray gh-span">
+                            <span>全球前十储油能力</span>
+                            <span><i class="c-red">26年</i>石油全产业链</span>
+                            <span>国家特许经营牌照</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mb-15 tc fs-16 bold c-red">数据安全</div>
+                        <img src="img/banner03.png" />
+                        <div class="mt-10 tc fs-11 c-darkgray">严格执行公安部信息系统安全三级保护措施</div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <a class="btn" href="javascript:;">查看详情</a>
+        </div>
+
+        <div class="mt-10 gh-question">
+            <div class="mb-15 tc fs-16 bold c-red">常见问题</div>
+
+            <ul class="question_list">
+                <li class="active">
+                    <div class="c-red bold"><img src="img/q1.png" />光汇云油是干什么的？</div>
+                    <p>您好，光汇云油是线上储油，线下加油的平台，客户在油价低价时提前储油，油价上涨后兑付，获取油价上涨的红利；光汇云油是光汇石油线名下的子公司，依托于光汇石油线下的石油产业链，快速的感知油价变化，为光汇云油提供产业链的流通收益保证。</p>
+                </li>
+                <li>
+                    <div class="c-red bold"><img src="img/q2.png" />光汇云油是干什么的？</div>
+                    <p>您好，光汇云油是线上储油，线下加油的平台，客户在油价低价时提前储油，油价上涨后兑付，获取油价上涨的红利；光汇云油是光汇石油线名下的子公司，依托于光汇石油线下的石油产业链，快速的感知油价变化，为光汇云油提供产业链的流通收益保证。</p>
+                </li>
+                <li>
+                    <div class="c-red bold"><img src="img/q3.png" />光汇云油是干什么的？</div>
+                    <p>您好，光汇云油是线上储油，线下加油的平台，客户在油价低价时提前储油，油价上涨后兑付，获取油价上涨的红利；光汇云油是光汇石油线名下的子公司，依托于光汇石油线下的石油产业链，快速的感知油价变化，为光汇云油提供产业链的流通收益保证。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 30000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+
+    $(function(){
+        $(".question_list li").on("click",function(){
+
+            $(this).addClass("active").siblings("li").removeClass("active");
+        })
+
+    })
+
+    </script>
+</body>
+</html>
